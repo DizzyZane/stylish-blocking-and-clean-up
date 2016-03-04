@@ -1,0 +1,38 @@
+//main:main.less
+@-moz-document domain("theguardian.com") {
+/* the guardian
+ * http://www.theguardian.com/commentisfree/2015/may/31/steve-jobs-death-apple-icar
+ */
+body>:not(.l-side-margins),
+.l-side-margins>:not(article),
+header .content__main-column>:not(h1):not(.content__standfirst),
+.content__secondary-column,
+.gs-container>:not([class*="main"]),
+.gs-container>[class*="main"]>:not([itemprop]):not(.content__standfirst),
+aside {
+ display: none!important
+}
+.l-side-margins,
+.l-side-margins article,
+.l-side-margins .tonal--tone-comment .tonal__header,
+.tonal--tone-comment .tonal__header .content__headline,
+.tonal--tone-comment .tonal__header .content__head__comment-count .tone-colour {
+  background-color: @background-color;
+  color: @text-color;
+}
+.drop-cap,
+.drop-cap .drop-cap__inner,
+.drop-cap__inner {
+ all: inherit!important; display: inline!important
+}
+.content__main-column {
+ max-width: none!important; margin: 0!important
+}
+.tonal--tone-comment .tonal__standfirst .content__standfirst,
+figure {
+ max-width: 50%!important; margin: 0 auto!important;pointer-events: none;
+}
+header {
+ text-align: center
+}
+}

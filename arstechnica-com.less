@@ -1,0 +1,25 @@
+//main:main.less
+@-moz-document domain("arstechnica.com") {
+  /*Functions on both mobile and desktop arstechnica.com
+  * EG: http://arstechnica.com/business/2016/01/google-fiber-testing-home-phone-service-to-complete-triple-play-bundle/
+  */
+#container>:not(#content),
+#top-story,
+body.single-post #article-guts~*,
+.post-meta,
+#archive-head,
+article~* {
+ display: none!important
+}
+#container,
+#content,
+article {
+ width: 95%!important; padding: 5px!important; margin: 0 auto; border: 0!important
+}
+figure {
+ width: 50%!important; max-width: 50%!important; margin: 0 auto!important
+}
+figure img {
+ width: auto; height: auto
+}
+}

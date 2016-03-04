@@ -1,0 +1,25 @@
+//main:main.less
+@-moz-document domain("destructoid.com") {
+  /* destructoid.com
+  * http://www.destructoid.com/bayonetta-and-corrin-hit-smash-bros-next-week-337925.phtml
+  */
+body>:not(.page-wrapper),
+.page-wrapper>:not(.main-wrapper),
+.content>.row>:not(.blog-posts),
+h6,
+.fancy-title::after,
+.fancy-title span,
+#tagsbox,
+#tagsbox~:not(b):not(a),
+[href="https://disqus.com/home/settings/email/"] {
+ display: none!important
+}
+.col-md-8,
+#desktoppadding {
+ width: 100%!important
+}
+img,
+iframe {
+ max-width: 50%; display: block; margin: 0 auto
+}
+}

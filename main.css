@@ -1,5 +1,11 @@
 /* View http://dizzyzane.web.fc2.com/SpeedeeArticles/DizzyZane/Blocking/css-blocks/main.less for more information
  */
+:root {
+  --background-colour: #282a36;
+  --text-colour: #eee;
+  --unvisited-link-colour: #CF3;
+  --visited-link-color: #3CF;
+}
 @-moz-document domain("theguardian.com") {
   /* the guardian
  * http://www.theguardian.com/commentisfree/2015/may/31/steve-jobs-death-apple-icar
@@ -12,6 +18,14 @@
   .gs-container > [class*="main"] > :not([itemprop]):not(.content__standfirst),
   aside {
     display: none !important;
+  }
+  .l-side-margins,
+  .l-side-margins article,
+  .l-side-margins .tonal--tone-comment .tonal__header,
+  .tonal--tone-comment .tonal__header .content__headline,
+  .tonal--tone-comment .tonal__header .content__head__comment-count .tone-colour {
+    background-color: #282a36;
+    color: #eee;
   }
   .drop-cap,
   .drop-cap .drop-cap__inner,
@@ -91,7 +105,7 @@
     left: 1em;
     display: block;
     width: calc(98%);
-    height: calc(98%);
+    height: calc(100% - 2em);
   }
   .navigation-container .continue-button {
     z-index: 9999!important;
@@ -150,7 +164,7 @@
   /* wired.com
   * Example: http://www.wired.com/2016/01/things-will-get-messy-if-we-dont-start-wrangling-drones-now/
   */
-  body > :not(header):not(main),
+  body > :not(main),
   aside,
   #o-gallery,
   figure div,
@@ -177,7 +191,6 @@
   }
   article,
   .post,
-  #global-header,
   .fixed {
     position: relative!important;
     top: 0!important;
@@ -248,6 +261,25 @@
   figure img {
     width: auto;
     height: auto;
+  }
+  body,
+  #container,
+  #content,
+  article.standalone,
+  .article-content,
+  .heading {
+    color: #eee;
+    background: #282a36;
+  }
+  h2.standalone-deck,
+  figcaption {
+    color: #aaa;
+  }
+  a:link {
+    color: #CF3 !important;
+  }
+  a:visited {
+    color: #3CF !important;
   }
 }
 @-moz-document domain("thenextweb.com") {
@@ -376,5 +408,39 @@
     width: 50%;
     margin: 0 auto!important;
     display: block;
+  }
+}
+@-moz-document domain("sciencenews.org") {
+  /* sciencenews.com
+ * EG: https://www.sciencenews.org/article/gravity-waves-black-holes-verify-einsteins-prediction
+ */
+  .node .article-terms,
+  .node .field-name-field-op-author,
+  header#section-header,
+  aside,
+  .node .field-name-body ~ *,
+  .service-links,
+  .node .field-name-field-sn-copyright,
+  body > :not(#page),
+  #page > :not(section),
+  #zone-content > :not(#region-content),
+  #block-system-main ~ * {
+    display: none !important;
+  }
+  #region-content {
+    width: auto !important;
+  }
+  body.page-node #region-content .full-node .field-name-field-op-main-image,
+  body.page-node #region-content .full-node .field-name-field-op-caption {
+    margin: 0 auto!important;
+    max-width: 50% !important;
+  }
+  body,
+  .node h1.node-title {
+    color: #eee;
+    background: #282a36;
+  }
+  .node .field-name-field-sn-subtitle h2 {
+    color: #aaa;
   }
 }

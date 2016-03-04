@@ -1,0 +1,14 @@
+//main:main.less
+/* cracked.com blockingg/changes
+* Only recommended for articles
+*/
+@-moz-document domain("cracked.com") {
+body>:not(.mainFrame):not(#wrapper),
+.mainFrame>:not(:last-child),
+#safePlace~* {
+ display: none!important
+}
+#safePlace {
+ width: auto; max-width: none; margin: 0 auto
+}
+}

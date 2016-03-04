@@ -1,0 +1,22 @@
+//main:main.less
+@-moz-document domain("sciencenews.org") {
+/* sciencenews.com
+ * EG: https://www.sciencenews.org/article/gravity-waves-black-holes-verify-einsteins-prediction
+ */
+
+.node .article-terms, .node .field-name-field-op-author, header#section-header, aside, .node .field-name-body~*, .service-links, .node .field-name-field-sn-copyright, body>:not(#page), #page>:not(section), #zone-content>:not(#region-content), #block-system-main~* {
+ display: none!important
+}
+#region-content {
+ width: auto!important
+}
+body.page-node #region-content .full-node .field-name-field-op-main-image, body.page-node #region-content .full-node .field-name-field-op-caption {
+ margin: 0 auto!important; max-width: 50%!important
+}
+body, .node h1.node-title {
+ color: @text-color; background: @background-color;
+}
+.node .field-name-field-sn-subtitle h2 {
+ color: @subtitle-color;
+}
+}

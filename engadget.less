@@ -1,0 +1,19 @@
+//main:main.less
+@-moz-document domain("engadget.com") {
+/* engadget
+ * View http://www.engadget.com/2016/01/08/you-say-advertising-i-say-block-that-malware/ for a demonstration
+ */
+body > div > div>:not(.z-0),
+ .z-0>[role]:not(main), main>:not(.container\@tp\+), .grid.flex>:first-child, header>div>div>:not([class*="title"]), footer {
+ display: none!important;
+}
+iframe, img, svg, picture {
+ margin: 0 auto!important; display: block;
+}
+img, svg, picture {
+ max-width: 50%!important;
+}
+.col-8-of-12\@tl\+, .col-12-of-15\@d {
+ width: auto!important
+}
+}

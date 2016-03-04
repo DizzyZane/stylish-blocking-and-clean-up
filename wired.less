@@ -1,0 +1,38 @@
+//main:main.less
+@-moz-document domain("wired.com") {
+  /* wired.com
+  * Example: http://www.wired.com/2016/01/things-will-get-messy-if-we-dont-start-wrangling-drones-now/
+  */
+body>:not(main),
+aside,
+#o-gallery,
+figure div,
+#article-tags,
+header#post-header>ul,
+[data-js="cnePlayer"],
+[data-js="cnePlayer"]~* {
+ display: none!important
+}
+body {
+ padding-top: 0!important
+}
+.article-group,
+.site-container {
+ width: auto!important; max-width: none!important
+}
+#post-header,
+figure {
+ display: block; margin: 0 auto!important; padding: 0!important; max-width: 75%!important
+}
+article,
+.post,
+.fixed {
+ position: relative!important; top: 0!important; left: 0!important; height: auto!important; margin-bottom: 1rem!important
+}
+article {
+ margin: 0 auto!important; max-width: 80%!important
+}
+.article-group .flex-row {
+ max-width: 66%
+}
+}

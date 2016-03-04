@@ -1,0 +1,28 @@
+//main:main.less
+@-moz-document domain("thenextweb.com") {
+  /* thenextweb.com
+  * EG: http://thenextweb.com/shareables/2016/01/26/pikawho/
+  */
+.sidebar,
+.postContent~*,
+body>:not(#main),
+.l-postSingle-header-inner>:not(h1) {
+ display: none!important
+}
+.l-postSingle-content .l-postSingle-content-main {
+ width: 100%!important
+}
+.l-postSingle-content-main-photo {
+ width: 50%; margin: 0 auto; background-size: contain
+}
+.postGrid-post .image.lazyloadableImage,
+.lazyloadableImage {
+ opacity: 1!important
+}
+body {
+ padding: 0!important
+}
+iframe {
+ display: block; margin: 0 auto;
+}
+}

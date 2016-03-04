@@ -1,0 +1,38 @@
+//main:main.less
+@-moz-document domain("arstechnica.com"), domain("arstechnica.co.uk") {
+  /* Functions on all variants of arstechnica that I could find
+  * http://arstechnica.com/business/2016/01/google-fiber-testing-home-phone-service-to-complete-triple-play-bundle/
+  * http://arstechnica.co.uk/science/2016/01/crows-the-tail-pulling-food-stealing-bird-prodigies/
+  */
+#container>:not(#content),
+#top-story,
+body.single-post #article-guts~*,
+.post-meta,
+#archive-head,
+#article-sidebar {
+ display: none!important
+}
+#container,
+#content,
+article {
+ width: 95%!important; padding: 5px!important; margin: 0 auto; border: 0!important
+}
+figure {
+ width: 50%!important; max-width: 50%!important; margin: 0 auto!important
+}
+figure img {
+ width: auto; height: auto
+}
+body, #container, #content, article.standalone, .article-content, .heading {
+ color: @text-color; background: @background-color;
+}
+h2.standalone-deck, figcaption {
+ color: @subtitle-color;
+}
+a:link {
+ color: @unvisited-link-color!important
+}
+a:visited {
+ color: @visited-link-color!important
+}
+}

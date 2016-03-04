@@ -1,0 +1,16 @@
+//main:main.less
+@-moz-document domain("theverge.com") {
+  /* TheVerge.com
+  * EG: http://www.theverge.com/2016/1/31/10878544/microsoft-onedrive-free-storage-claim
+  */
+body>:not(.l-container),
+.l-container>:not(.l-page),
+.l-page>:not(article):not(div),
+.m-entry__body .m-entry__sidebar,
+header>:not(h1),
+.m-article__sources,
+.m-entry__content>:not(.m-article__entry-section),
+article>div:not(.m-entry__body) {
+ display: none!important
+}
+}
